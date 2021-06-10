@@ -47,6 +47,7 @@ func TestFind(t *testing.T) {
 	c := NewClient(apiKey)
 	ts := httptest.NewServer(http.HandlerFunc(findDummy))
 	c.host = ts.URL
+	defer ts.Close()
 	req := FindPlayerRequest{
 		Nickname: nickname,
 	}
@@ -76,6 +77,7 @@ func TestPlayer(t *testing.T) {
 	c := NewClient(apiKey)
 	ts := httptest.NewServer(http.HandlerFunc(playerDummy))
 	c.host = ts.URL
+	defer ts.Close()
 	player, err := c.PlayerClient().Get(playerID)
 	assert.NoError(t, err)
 	assert.Equal(t, playerID, player.PlayerID)
@@ -104,6 +106,7 @@ func TestHistory(t *testing.T) {
 	c := NewClient(apiKey)
 	ts := httptest.NewServer(http.HandlerFunc(historyDummy))
 	c.host = ts.URL
+	defer ts.Close()
 	req := HistoryRequest{
 		PlayerID: playerID,
 	}
@@ -148,6 +151,7 @@ func TestHubs(t *testing.T) {
 	c := NewClient(apiKey)
 	ts := httptest.NewServer(http.HandlerFunc(hubsDummy))
 	c.host = ts.URL
+	defer ts.Close()
 	req := HubsRequest{
 		PlayerID: playerID,
 	}
@@ -179,6 +183,7 @@ func TestStats(t *testing.T) {
 	c := NewClient(apiKey)
 	ts := httptest.NewServer(http.HandlerFunc(statsDummy))
 	c.host = ts.URL
+	defer ts.Close()
 	req := StatsRequest{
 		PlayerID: playerID,
 		GameID:   game,
@@ -213,6 +218,7 @@ func TestTournaments(t *testing.T) {
 	c := NewClient(apiKey)
 	ts := httptest.NewServer(http.HandlerFunc(tDummy))
 	c.host = ts.URL
+	defer ts.Close()
 	req := TournamentsRequest{
 		PlayerID: playerID,
 	}
