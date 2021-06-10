@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "hub_id": "0255e3b0-126f-4c2b-9b95-c12ae54a0c5b",
+      "name": "EPIC Pro League Division 2",
+      "avatar": "https://assets.faceit-cdn.net/hubs/avatar/0255e3b0-126f-4c2b-9b95-c12ae54a0c5b_1551279519983.jpg",
+      "game_id": "csgo",
+      "organizer_id": "eab92199-46d4-47da-8939-a905930febc2",
+      "faceit_url": "https://www.faceit.com/{lang}/hub/0255e3b0-126f-4c2b-9b95-c12ae54a0c5b/"
+    },
+    {
+      "hub_id": "8f865128-f6a3-4299-ace7-e074d6002c34",
+      "name": "Mapcore EU - Community Maps",
+      "avatar": "https://assets.faceit-cdn.net/hubs/avatar/8f865128-f6a3-4299-ace7-e074d6002c34_1551281254603.jpg",
+      "game_id": "csgo",
+      "organizer_id": "948b5a8c-702e-4140-a4b3-1d0cbfeebd45",
+      "faceit_url": "https://www.faceit.com/{lang}/hub/8f865128-f6a3-4299-ace7-e074d6002c34/"
+    },
+    {
+      "hub_id": "66059536-896b-4ce6-968c-3efaac136cd3",
+      "name": "EU Classic Hub",
+      "avatar": "https://assets.faceit-cdn.net/hubs/avatar/66059536-896b-4ce6-968c-3efaac136cd3_1560941632821.jpg",
+      "game_id": "csgo",
+      "organizer_id": "3aeec6d7-e2ca-47dc-8309-2c3890510cd5",
+      "faceit_url": "https://www.faceit.com/{lang}/hub/66059536-896b-4ce6-968c-3efaac136cd3/"
+    },
+    {
+      "hub_id": "6b895501-20b0-418c-a16b-896039addf59",
+      "name": "ECS Hub EU",
+      "avatar": "https://assets.faceit-cdn.net/hubs/avatar/6b895501-20b0-418c-a16b-896039addf59_1551280822896.jpg",
+      "game_id": "csgo",
+      "organizer_id": "12c3c3c2-5246-4fd6-a3ea-f4ed0e8d5186",
+      "faceit_url": "https://www.faceit.com/{lang}/hub/6b895501-20b0-418c-a16b-896039addf59/"
+    }
+  ],
+  "start": 0,
+  "end": 20
+}

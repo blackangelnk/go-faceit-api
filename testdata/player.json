@@ -1,0 +1,58 @@
+{
+    "player_id": "bb75c4d7-8167-4494-9a9d-efdf9bda3862",
+    "nickname": "testnickname",
+    "avatar": "",
+    "country": "ru",
+    "cover_image": "https://assets.faceit-cdn.net/users_covers/1dceb532-6bdf-4051-9be1-904a79f175c7_1550824777555.jpg",
+    "cover_featured_image": "",
+    "infractions": {
+      "last_infraction_date": "Sun Sep 23 20:22:57 UTC 2018",
+      "afk": 1,
+      "leaver": 0,
+      "qm_not_checkedin": 0,
+      "qm_not_voted": 0
+    },
+    "platforms": {
+      "steam": "STEAM_0:1:21592863"
+    },
+    "games": {
+      "csgo": {
+        "game_profile_id": "461e038d-1604-4426-b483-1a977f7df354",
+        "region": "EU",
+        "regions": {
+          "EU": {
+            "selected_ladder_id": "9ca0bd44-eb9e-4c09-b2bb-6bb007068d03"
+          }
+        },
+        "skill_level_label": "10",
+        "game_player_id": "76561198223323123",
+        "skill_level": 10,
+        "faceit_elo": 2156,
+        "game_player_name": "NAME"
+      },
+      "csdz": {
+        "game_profile_id": "fb32baf9-15aa-4dd2-b338-323e8c2f6002",
+        "region": "EU",
+        "regions": null,
+        "skill_level_label": "3",
+        "game_player_id": "76561198223323123",
+        "skill_level": 3,
+        "faceit_elo": 0,
+        "game_player_name": "NAME"
+      }
+    },
+    "settings": {
+      "language": "en"
+    },
+    "friends_ids": [
+      "4cf88fab-342b-42bd-a208-7441374a7db8"
+    ],
+    "new_steam_id": "[U:1:43222322]",
+    "steam_id_64": "76561198223323123",
+    "steam_nickname": "nickname",
+    "membership_type": "free",
+    "memberships": [
+      "free"
+    ],
+    "faceit_url": "https://www.faceit.com/{lang}/players/test"
+  }

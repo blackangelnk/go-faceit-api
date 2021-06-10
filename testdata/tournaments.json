@@ -1,0 +1,35 @@
+{
+    "end": 0,
+    "items": [
+      {
+        "anticheat_required": true,
+        "custom": true,
+        "faceit_url": "string",
+        "featured_image": "string",
+        "game_id": "csgo",
+        "invite_type": "string",
+        "match_type": "string",
+        "max_skill": 0,
+        "membership_type": "string",
+        "min_skill": 0,
+        "name": "string",
+        "number_of_players": 0,
+        "number_of_players_checkedin": 0,
+        "number_of_players_joined": 0,
+        "number_of_players_participants": 0,
+        "organizer_id": "string",
+        "prize_type": "string",
+        "region": "string",
+        "started_at": 0,
+        "status": "string",
+        "subscriptions_count": 0,
+        "team_size": 0,
+        "total_prize": {},
+        "tournament_id": "string",
+        "whitelist_countries": [
+          "string"
+        ]
+      }
+    ],
+    "start": 0
+  }
