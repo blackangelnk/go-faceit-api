@@ -25,27 +25,22 @@ type StatusError struct {
 	StatusCode int
 }
 
-type pagination struct {
+type Pagination struct {
 	Offset int
 	Limit  int
 }
 
-type timestamps struct {
-	From int
-	To   int
-}
-
-type rPagination struct {
+type RPagination struct {
 	Start int `json:"start"`
 	End   int `json:"end"`
 }
 
-type rTime struct {
+type Timestamps struct {
 	From int `json:"from"`
 	To   int `json:"to"`
 }
 
-func (p *pagination) toValues(v *url.Values) {
+func (p *Pagination) toValues(v *url.Values) {
 	if p.Limit != 0 {
 		v.Add("limit", strconv.Itoa(p.Limit))
 	}
@@ -54,7 +49,7 @@ func (p *pagination) toValues(v *url.Values) {
 	}
 }
 
-func (t *timestamps) toValues(v *url.Values) {
+func (t *Timestamps) toValues(v *url.Values) {
 	if t.From != 0 {
 		v.Add("from", strconv.Itoa(t.From))
 	}

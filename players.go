@@ -92,8 +92,8 @@ type HistoryItem struct {
 
 type History struct {
 	Items []HistoryItem `json:"items"`
-	rPagination
-	rTime
+	RPagination
+	Timestamps
 }
 
 type Hub struct {
@@ -107,7 +107,7 @@ type Hub struct {
 
 type Hubs struct {
 	Items []Hub `json:"items"`
-	rPagination
+	RPagination
 }
 
 type Tournament struct {
@@ -141,7 +141,7 @@ type Tournament struct {
 
 type Tournaments struct {
 	Items []Tournament `json:"items"`
-	rPagination
+	RPagination
 }
 
 type Stats struct {
@@ -205,18 +205,18 @@ type FindPlayerRequest struct {
 type HistoryRequest struct {
 	PlayerID string
 	Game     string
-	pagination
-	timestamps
+	Pagination
+	Timestamps
 }
 
 type HubsRequest struct {
 	PlayerID string
-	pagination
+	Pagination
 }
 
 type TournamentsRequest struct {
 	PlayerID string
-	pagination
+	Pagination
 }
 
 type StatsRequest struct {
@@ -252,8 +252,8 @@ func (c *PlayerClient) History(req HistoryRequest) (History, error) {
 	v := url.Values{
 		"game": {req.Game},
 	}
-	req.pagination.toValues(&v)
-	req.timestamps.toValues(&v)
+	req.Pagination.toValues(&v)
+	req.Timestamps.toValues(&v)
 	history := History{}
 	err := c.sendRequest("/players/"+req.PlayerID+"/history?"+v.Encode(), &history)
 	return history, err
@@ -261,7 +261,7 @@ func (c *PlayerClient) History(req HistoryRequest) (History, error) {
 
 func (c *PlayerClient) Hubs(req HubsRequest) (Hubs, error) {
 	v := url.Values{}
-	req.pagination.toValues(&v)
+	req.Pagination.toValues(&v)
 	hubs := Hubs{}
 	err := c.sendRequest("/players/"+req.PlayerID+"/hubs?"+v.Encode(), &hubs)
 	return hubs, err
@@ -275,7 +275,7 @@ func (c *PlayerClient) Stats(req StatsRequest) (Stats, error) {
 
 func (c *PlayerClient) Tournaments(req TournamentsRequest) (Tournaments, error) {
 	v := url.Values{}
-	req.pagination.toValues(&v)
+	req.Pagination.toValues(&v)
 	t := Tournaments{}
 	err := c.sendRequest("/players/"+req.PlayerID+"/tournaments?"+v.Encode(), &t)
 	return t, err
